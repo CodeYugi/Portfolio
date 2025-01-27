@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugi's Portfolio</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navigation Bar -->
+    <nav  id="nav">
+        <div id="nav-links"  >
+            <a href="#" class="nav-link-home">Home</a>
+            <a href="#about" class="nav-link-button">About</a>
+            <a href="#projects" class="nav-link-button">Projects</a>
+            <a href="#contact" class="nav-link-button">Contact</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="signup-button button-glow">Sign Up</button>
+            <button class="login-button button-glow">Log In</button>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main-section flex items-center justify-center p-20 text-center">
+        <div class="intro-content space-y-8">
+            <div class="logo-container flex justify-center mb-8">
+                <img src="logo.png" alt="Yugi Logo" class="logo-image w-64 h-64 object-contain hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="intro-text text-center">
+                <h1 class="intro-heading creative-text mb-4">Hi, I am Yugi</h1>
+            </div>
+            <p class="intro-description text-lg max-w-3xl mx-auto">Welcome to my portfolio. I'm a passionate developer, always striving to learn more and create impactful projects. Feel free to explore my work!</p>
+            <button class="learn-more-button button-glow px-6 py-3 mt-4">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section bg-gray-900 min-h-screen p-20 text-center relative overflow-hidden flex items-center justify-center">
+        <div class="background-gradient absolute inset-0 bg-gradient-to-b from-pink-500/10 to-cyan-400/10"></div>
+        <div class="background-radial-gradient absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,0,102,0.1),rgba(0,255,255,0.1))]"></div>
+        
+        <div class="about-content relative z-10 max-w-5xl mx-auto">
+            <h2 class="about-heading text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 hover:scale-110 transition-transform duration-300">About Me</h2>
+            
+            <div class="about-grid grid md:grid-cols-3 gap-8 items-start">
+                <!-- Personal Info Column -->
+                <div class="personal-info space-y-6 transform hover:-rotate-2 transition-transform duration-300">
+                    <div class="info-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 shadow-lg hover:shadow-cyan-400/20 hover:scale-105 hover:-translate-y-2">
+                        <h3 class="info-title text-xl font-semibold text-pink-500 mb-2">Who I Am</h3>
+                        <p class="info-description text-gray-300">I am 17 years old, passionate about technology and creativity.</p>
+                    </div>
+                    <div class="info-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 shadow-lg hover:shadow-cyan-400/20 hover:scale-105 hover:-translate-y-2">
+                        <h3 class="info-title text-xl font-semibold text-pink-500 mb-2">My Mission</h3>
+                        <p class="info-description text-gray-300">Creating innovative solutions through technology and writing books.</p>
+                    </div>
+                    <div class="info-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 shadow-lg hover:shadow-cyan-400/20 hover:scale-105 hover:-translate-y-2">
+                        <h3 class="info-title text-xl font-semibold text-pink-500 mb-2">My Goals</h3>
+                        <p class="info-description text-gray-300">To inspire and innovate through technology and creative writing.</p>
+                    </div>
+                </div>
+
+                <!-- Skills Column -->
+                <div class="skills-column space-y-6 transform hover:rotate-2 transition-transform duration-300 mt-8 md:mt-0">
+                    <div class="skills-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 shadow-lg hover:shadow-cyan-400/20">
+                        <h3 class="skills-title text-xl font-semibold text-pink-500 mb-4">Technical Skills</h3>
+                        <div class="skills-list flex flex-wrap gap-3">
+                            <div class="skill-item px-4 py-2 bg-pink-500/20 rounded-lg text-cyan-400 border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 flex items-center gap-2 hover:scale-110 hover:-translate-y-1">
+                                <img src="html.png" alt="HTML" class="skill-icon w-6 h-6 object-contain">
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-item px-4 py-2 bg-pink-500/20 rounded-lg text-cyan-400 border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 flex items-center gap-2 hover:scale-110 hover:-translate-y-1">
+                                <img src="/css.png" alt="CSS" class="skill-icon w-6 h-6 object-contain">
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item px-4 py-2 bg-pink-500/20 rounded-lg text-cyan-400 border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 flex items-center gap-2 hover:scale-110 hover:-translate-y-1">
+                                <img src="js.png" alt="JavaScript" class="skill-icon w-6 h-6 object-contain">
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 shadow-lg hover:shadow-cyan-400/20 hover:scale-105">
+                        <h3 class="skills-title text-xl font-semibold text-pink-500 mb-2">Soft Skills</h3>
+                        <div class="soft-skills-list flex flex-wrap gap-2">
+                            <span class="soft-skill-item px-3 py-1 bg-pink-500/20 rounded-full text-sm hover:scale-110 hover:-translate-y-1 transition-transform duration-300">Problem Solving</span>
+                            <span class="soft-skill-item px-3 py-1 bg-cyan-400/20 rounded-full text-sm hover:scale-110 hover:-translate-y-1 transition-transform duration-300">Creativity</span>
+                            <span class="soft-skill-item px-3 py-1 bg-pink-500/20 rounded-full text-sm hover:scale-110 hover:-translate-y-1 transition-transform duration-300">Communication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interests & Future Column -->
+                <div class="interests-column space-y-6 transform hover:-rotate-2 transition-transform duration-300">
+                    <div class="interest-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 shadow-lg hover:shadow-cyan-400/20 hover:scale-105 hover:-translate-y-2">
+                        <h3 class="interest-title text-xl font-semibold text-pink-500 mb-2">Current Focus</h3>
+                        <div class="focus-list flex flex-wrap gap-2">
+                            <span class="focus-item px-3 py-1 bg-pink-500/20 rounded-full text-sm hover:scale-110 transition-transform duration-300">Web Development</span>
+                            <span class="focus-item px-3 py-1 bg-cyan-400/20 rounded-full text-sm hover:scale-110 transition-transform duration-300">Book Writing</span>
+                            <span class="focus-item px-3 py-1 bg-pink-500/20 rounded-full text-sm hover:scale-110 transition-transform duration-300">UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="interest-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 shadow-lg hover:shadow-cyan-400/20 hover:scale-105 hover:-translate-y-2">
+                        <h3 class="interest-title text-xl font-semibold text-pink-500 mb-2">Future Goals</h3>
+                        <p class="interest-description text-gray-300">Exploring AI and Machine Learning while continuing to grow as a developer.</p>
+                    </div>
+                    <div class="interest-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 shadow-lg hover:shadow-cyan-400/20 hover:scale-105 hover:-translate-y-2">
+                        <h3 class="interest-title text-xl font-semibold text-pink-500 mb-2">Hobbies</h3>
+                        <div class="hobbies-list flex flex-wrap gap-2">
+                            <span class="hobby-item px-3 py-1 bg-pink-500/20 rounded-full text-sm hover:scale-110 transition-transform duration-300">Coding</span>
+                            <span class="hobby-item px-3 py-1 bg-cyan-400/20 rounded-full text-sm hover:scale-110 transition-transform duration-300">Writing</span>
+                            <span class="hobby-item px-3 py-1 bg-pink-500/20 rounded-full text-sm hover:scale-110 transition-transform duration-300">Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section min-h-screen p-20 relative overflow-hidden flex flex-col items-center justify-center">
+        <div class="background-gradient absolute inset-0 bg-gradient-to-b from-pink-500/10 to-cyan-400/10"></div>
+        <div class="background-radial-gradient absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,0,102,0.1),rgba(0,255,255,0.1))]"></div>
+        
+        <div class="projects-content relative z-10 w-full max-w-7xl mx-auto">
+            <h2 class="projects-heading text-5xl font-bold mb-16 text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 hover:scale-110 transition-transform duration-300">My Projects</h2>
+            
+            <div class="projects-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mt-8">
+                <!-- CodeYugi Learning CS Website Project -->
+                <div class="project-card group relative">
+                    <div class="project-card-background absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="project-card-content relative bg-black/50 rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="project-image-container w-full h-48 mb-6 overflow-hidden rounded-lg border-2 border-pink-500/30 group-hover:border-cyan-400/30 transition-colors duration-300">
+                            <img src="CodeYugi.png" alt="CodeYugi Learning CS" class="project-image w-full h-full object-contain bg-gray-900 p-2 transform group-hover:scale-110 transition duration-300">
+                        </div>
+                        <h3 class="project-title text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 mb-3">CodeYugi Learning CS</h3>
+                        <p class="project-description text-gray-300 mb-4">A platform offering free resources and tutorials to learn computer science.</p>
+                        <div class="project-tech-list flex flex-wrap gap-2 mb-4">
+                            <span class="tech-item px-3 py-1 text-xs bg-pink-500/20 rounded-full text-cyan-400">HTML</span>
+                            <span class="tech-item px-3 py-1 text-xs bg-cyan-400/20 rounded-full text-pink-500">CSS</span>
+                            <span class="tech-item px-3 py-1 text-xs bg-pink-500/20 rounded-full text-cyan-400">JavaScript</span>
+                        </div>
+                        <a href="https://codeyugi.github.io/CodeYugi/" target="_blank" class="view-project-link w-full py-2 border border-pink-500 hover:border-cyan-400 rounded-lg text-white hover:text-cyan-400 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/20 text-center block">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Netflix Clone Project -->
+                <div class="project-card group relative">
+                    <div class="project-card-background absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="project-card-content relative bg-black/50 rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="project-image-container w-full h-48 mb-6 overflow-hidden rounded-lg border-2 border-pink-500/30 group-hover:border-cyan-400/30 transition-colors duration-300">
+                            <img src="netflix.png" alt="Netflix Clone" class="project-image w-full h-full object-cover bg-gray-900 p-2 transform group-hover:scale-110 transition duration-300">
+                        </div>
+                        <h3 class="project-title text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 mb-3">Netflix Clone</h3>
+                        <p class="project-description text-gray-300 mb-4">A streaming platform clone built with modern web technologies.</p>
+                        <div class="project-tech-list flex flex-wrap gap-2 mb-4">
+                            <span class="tech-item px-3 py-1 text-xs bg-pink-500/20 rounded-full text-cyan-400">React</span>
+                            <span class="tech-item px-3 py-1 text-xs bg-cyan-400/20 rounded-full text-pink-500">API</span>
+                            <span class="tech-item px-3 py-1 text-xs bg-pink-500/20 rounded-full text-cyan-400">Tailwind</span>
+                        </div>
+                        <button class="view-project-button w-full py-2 border border-pink-500 hover:border-cyan-400 rounded-lg text-white hover:text-cyan-400 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/20">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Project -->
+                <div class="project-card group relative">
+                    <div class="project-card-background absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="project-card-content relative bg-black/50 rounded-lg p-6 transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="project-video-container w-full h-48 mb-6 overflow-hidden rounded-lg border-2 border-pink-500/30 group-hover:border-cyan-400/30 transition-colors duration-300">
+                            <video src="lol.mp4" alt="Coming Soon" class="project-video w-full h-full object-cover bg-gray-900 p-2 transform group-hover:scale-110 transition duration-300" autoplay loop muted></video>
+                        </div>
+                        <h3 class="project-title text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 mb-3">Coming Soon</h3>
+                        <p class="project-description text-gray-300 mb-4">An exciting new project in development.</p>
+                        <div class="project-tech-list flex flex-wrap gap-2 mb-4">
+                            <span class="tech-item px-3 py-1 text-xs bg-pink-500/20 rounded-full text-cyan-400">Next.js</span>
+                            <span class="tech-item px-3 py-1 text-xs bg-cyan-400/20 rounded-full text-pink-500">AI</span>
+                            <span class="tech-item px-3 py-1 text-xs bg-pink-500/20 rounded-full text-cyan-400">Web3</span>
+                        </div>
+                        <button class="view-project-button w-full py-2 border border-pink-500 hover:border-cyan-400 rounded-lg text-white hover:text-cyan-400 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/20">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section min-h-screen relative overflow-hidden flex items-center justify-center bg-gray-900 p-20">
+        <!-- Background Effects -->
+        <div class="background-gradient absolute inset-0 bg-gradient-to-b from-pink-500/10 to-cyan-400/10"></div>
+        <div class="background-radial-gradient absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,0,102,0.1),rgba(0,255,255,0.1))]"></div>
+        
+        <div class="contact-content relative z-10 max-w-4xl w-full">
+            <h2 class="contact-heading text-5xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 hover:scale-110 transition-transform duration-300">Contact Me</h2>
+            
+            <div class="contact-card bg-black/50 p-8 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300 shadow-lg hover:shadow-cyan-400/20">
+                <div class="contact-grid grid md:grid-cols-2 gap-8">
+                    <!-- Contact Info -->
+                    <div class="contact-info space-y-6">
+                        <div class="contact-info-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300">
+                            <h3 class="contact-info-title text-xl font-semibold text-pink-500 mb-4">Get in Touch</h3>
+                            <div class="contact-info-list space-y-4">
+                                <div class="contact-info-item flex items-center space-x-3 text-gray-300 hover:text-cyan-400 transition-colors duration-300">
+                                    <svg class="contact-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    <a href="mailto:yugiicode@gmail.com" class="contact-email hover:text-cyan-400">yugiicode@gmail.com</a>
+                                </div>
+                                <div class="contact-info-item flex items-center space-x-3 text-gray-300 hover:text-cyan-400 transition-colors duration-300">
+                                    <svg class="contact-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                    </svg>
+                                    <span class="contact-phone">+91 XXXXXXXXXX</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-media-card bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300">
+                            <h3 class="social-media-title text-xl font-semibold text-pink-500 mb-4">Social Media</h3>
+                            <div class="social-media-links flex space-x-4">
+                                <a href="https://github.com/CodeYugi" target="_blank" class="social-media-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">
+                                    <svg class="social-media-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/arhant-tyagi-53235b33b/" target="_blank" class="social-media-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">
+                                    <svg class="social-media-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://x.com/CodeYugi" target="_blank" class="social-media-link text-gray-300 hover:text-cyan-400 transition-colors duration-300">
+                                    <svg class="social-media-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div width="0%" height="0%"></div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form bg-black/50 p-6 rounded-lg border border-pink-500/30 hover:border-cyan-400/30 transition-all duration-300">
+                        <form class="form space-y-4">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" class="form-input w-full p-3 bg-gray-900/50 rounded-lg border border-pink-500/30 focus:border-cyan-400/30 focus:outline-none text-white">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" class="form-input w-full p-3 bg-gray-900/50 rounded-lg border border-pink-500/30 focus:border-cyan-400/30 focus:outline-none text-white">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="4" class="form-textarea w-full p-3 bg-gray-900/50 rounded-lg border border-pink-500/30 focus:border-cyan-400/30 focus:outline-none text-white"></textarea>
+                            </div>
+                            <button class="submit-button w-full py-3 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity duration-300">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black p-5 text-center text-sm">
+        <p class="footer-text text-gray-300">&copy; 2024 <span class="footer-highlight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">Arhant Tyagi</span>. All Rights Reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

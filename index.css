@@ -1,0 +1,90 @@
+.glow-effect {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.6);
+}
+.button-glow {
+    background: linear-gradient(90deg, #ff0066, #6600ff);
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.button-glow:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 0, 102, 0.7), 0 0 25px rgba(102, 0, 255, 0.7);
+}
+.profile-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+}
+@keyframes textAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+@keyframes colorChange {
+    0% {
+        color: #ff0066;
+    }
+    50% {
+        color: #00ffff;
+    }
+    100% {
+        color: #ff0066;
+    }
+}
+.creative-text {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0066, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s;
+}
+.creative-text:hover {
+    transform: scale(1.1);
+}
+   /* yugi write this code  */
+#nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 5px;
+     background-color: transparent;
+} 
+#nav-links {
+    display: flex;
+    gap: 1.5rem; /* 6 in Tailwind equals 1.5rem */
+    font-size: 1.25rem; /* xl in Tailwind equals 1.25rem */
+    font-weight: 600; /* font-semibold in Tailwind */
+  }
+  
+  .nav-link-home {
+    color: #ec4899; /* text-pink-500 */
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-link-home:hover {
+    color: #22d3ee; /* text-cyan-400 */
+  }
+  
+  .nav-link-button {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-link-button:hover {
+    color: #22d3ee; /* text-cyan-400 */
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 1rem; /* space-x-4 in Tailwind equals 1rem */
+  }
+ .lol{
+    width: 100%;
+ }
